@@ -1,0 +1,523 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 15%;
+}
+
+/* Nvigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 20px;
+  padding: 15px;
+  border-bottom: 1px solid rgb(232, 216, 216);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+.logo-search {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.left-sub-nav {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+}
+
+/* elements in logo-search */
+.fa-facebook {
+  color: #1877f2;
+  font-size: 30px;
+}
+
+.fbsearch {
+  width: 400px;
+  box-shadow: 0px 0px 1px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(244, 240, 240);
+}
+
+.fa-search {
+  font-size: 12px;
+}
+
+#topsearch {
+  border: none;
+  background: rgb(244, 240, 240);
+  padding: 5px;
+}
+/* 
+#topsearch:active{
+  border: none;
+} */
+
+/*  sstyle anchor link icons */
+
+.anchor-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 55px;
+  font-size: 25px;
+  /* position: absolute;
+left: 30%;
+margin-bottom: 10px; */
+}
+
+/* for tooltip */
+.tooltip{
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 2px solid black; */
+  cursor: pointer;
+
+}
+
+.tooltiptext{
+  visibility: hidden;
+  width: 65px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 5px ;
+  border-radius: 6px;
+  position: absolute;
+  top: 30px;
+  right: 2px;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+.fa-circle-user,
+.fa-house,
+.fa-user-group,
+.fa-film {
+  color: rgb(165, 151, 151);
+}
+
+.fa-house:hover {
+  text-decoration: none;
+  border-bottom: 5px solid blue;
+  transition: 0.5s;
+  color: blue;
+}
+
+.fa-user-group:hover {
+  text-decoration: none;
+  border-bottom: 5px solid blue;
+  transition: 0.5s;
+  color: blue;
+}
+
+.fa-film:hover {
+  text-decoration: none;
+  border-bottom: 5px solid blue;
+  transition: 0.5s;
+  color: blue;
+}
+
+.fa-circle-user:hover {
+  text-decoration: none;
+  border-bottom: 5px solid blue;
+  transition: 0.5s;
+  border-width: 5px 20px;
+  color: blue;
+}
+
+/* /style anchor icons left navbar */
+
+.left-sub-nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#find {
+  border-radius: 30px;
+  border: none;
+  padding: 7px;
+  box-shadow: 0px 0px 0.5px grey;
+  font-size: 10px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+#fa,
+#x-dp {
+  border-radius: 50%;
+}
+
+.fa-bell,
+.fa-square,
+.fa-facebook-messenger {
+  font-size: 22px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fa-chevron-down {
+  font-size: 20px;
+
+  position: absolute;
+  bottom: 5px;
+  left: 99%;
+  transform: translateX(-50%);
+  background: #f5f5f8;
+  color: rgb(24, 5, 5);
+  padding: 2px 2px;
+  font-size: 9px;
+  height: 11px;
+  border-radius: 50%;
+  /* text-align: center; */
+  cursor: pointer;
+}
+
+/*  style main */
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns:  1fr 1fr 1fr; */
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  padding: 40px;
+  min-height: 100vh;
+  gap: 7%;
+  background: #f3f0f0;
+}
+
+.left-sidebar {
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* left-bar content */
+.user-namepic {
+  font-size: 15px;
+  font-family: Verdana;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+#username {
+  /* position: absolute; */
+  /* bottom: 720px; */
+  right: 71%;
+}
+
+#namepic {
+  border-radius: 50%;
+  width: 13%;
+  font-weight: 700;
+}
+
+.left-sidebar,
+.right-sidebar {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 0;
+  height: 100vh;
+  /* overflow-y: auto; */
+}
+
+
+.fa-meta{
+color: purple;
+}
+
+.fa-clock{
+color: #6e68e9;
+}
+
+.fa-user-group{
+color:rgb(128, 128, 234);
+/* background: blue; */
+
+}
+
+.fa-bookmark{
+color: rgb(233, 1, 254);
+}
+
+.fa-users{
+color: white;
+background: blue;
+padding: 4px;
+text-align: center;
+border-radius: 50%;
+margin: auto;
+}
+
+.fa-store{
+color: #4f46e5;
+
+}
+
+.fa-rss{
+color: orangered;
+}
+
+.fa-ad{
+color: cornflowerblue;
+}
+
+.fa-chevron-left{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 5px;
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+}
+
+
+/* stle for middle section */
+.middle-sec-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  gap: 15px;
+  box-shadow: 0px 0px 1px;
+}
+
+#namepic2 {
+  border-radius: 50%;
+  width: 9.5%;
+  font-weight: 700;
+}
+
+#usermind {
+  width: 400px;
+  box-shadow: 0px 0px 1px;
+  padding: 5px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(244, 240, 240);
+
+  /* color: inherit; */
+}
+
+.fa-paperclip {
+  color: green;
+  cursor: pointer;
+}
+
+.fa-video {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-smile {
+  color: yellow;
+  cursor: pointer;
+}
+
+.shuffled-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  gap: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.each-media img {
+  border-radius: 10px;
+  height: 142px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.each-media {
+  text-align: center;
+  position: relative;
+  overlay: hidden;
+}
+
+.fa-snowman {
+  position: absolute;
+  top: 8px;
+  left : 5px;
+  background: #4f46e5;
+  color: white;
+  font-size: 18px;
+  border-radius: 50% 20%;
+  border: 1px solid white;
+  padding: 2px 4px;
+  z-index: 0;
+  
+}
+
+#name{
+position: absolute;
+bottom: 0;
+left: 0;
+/* z-index: 1; */
+
+}
+
+.static-media {
+  background: white;
+  height: 5%;
+  position: relative;
+}
+
+.static-media img {
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.static-media p {
+  font-family: Verdana;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#add {
+  /* position: absolute; */
+
+   position: absolute;
+  bottom: 30px;
+  left : 40px;
+  background: #6e68e9;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 2px;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.fa-plus {
+  /* position:absolute; */
+}
+
+.user-post{
+ background: white;
+ 
+}
+
+/* user post */
+.user-post_view{
+  display: flex;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  gap: 10px;
+}
+
+.cancel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  gap: 12px;
+  position: absolute;
+  right: 40px;
+  font-size: 20px;
+  opacity:1;
+  color: rgb(104, 96, 96);
+}
+
+#user_img{
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.fa-circle{
+color: blue;
+}
+
+#username{
+font-weight: 600;
+font-family: Tahoma;
+}
+
+
+#follow,
+#timer{
+position: absolute;
+left: 50px;
+}
+
+#follo{
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Arial;
+}
+
+#userp{
+  font-family: Trebuchet MS ;
+  width: 650px;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 15px 2px;
+}
+
+#userimg{
+  width: 725px;
+  /* padding: ; */
+}
+
+.reaction{
+  position: relative;
+}
+
+#share{
+  position: absolute;
+  right: 10px;
+}
+
+
+/* style for right sidebar */
+.contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+}
+
+#contacts{
+  font-size: 19px;
+  font-weight: 550;
+  
+}
+
+
+
+
+
